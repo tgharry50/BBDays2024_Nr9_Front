@@ -113,15 +113,73 @@
             form.append("split", 0)
         }
         let plaster_mark = $("#plaster_mark").prop("checked")
+        if (plaster_mark) {
+            form.append("plaster_mark", 1)
+        } else {
+            form.append("plaster_mark", 0)
+        }
         let plaster_mark_2 = $("#plaster_mark_2").prop("checked")
+        if (plaster_mark_2) {
+            form.append("plaster_mark_2", 1)
+        } else {
+            form.append("plaster_mark_2", 0)
+        }
         let spirit = $("#spirit").prop("checked")
+        if (spirit) {
+            form.append("spirit", 1)
+        } else {
+            form.append("spirit", 0)
+        }
         let foil_nrc = $("#foil_nrc").prop("checked")
+        if (foil_nrc) {
+            form.append("foil_nrc", 1)
+        } else {
+            form.append("foil_nrc", 0)
+        }
         let mask = $("#mask").prop("checked")
+        if (mask) {
+            form.append("mask", 1)
+        } else {
+            form.append("mask", 0)
+        }
         let bloodsucker = $("#bloodsucker").prop("checked")
+        if (bloodsucker) {
+            form.append("bloodsucker", 1)
+        } else {
+            form.append("bloodsucker", 0)
+        }
         let latex = $("#latex").prop("checked")
+        if (latex) {
+            form.append("latex", 1)
+        } else {
+            form.append("latex", 0)
+        }
         let dust_wound = $("#dust_wound").prop("checked")
+        if (dust_wound) {
+            form.append("dust_wound", 1)
+        } else {
+            form.append("dust_wound", 0)
+        }
         let medpack = $("#medpack").prop("checked")
-        console.log("test")
+        if (medpack) {
+            form.append("medpack", 1)
+        } else {
+            form.append("medpack", 0)
+        }
+        let c = 0;
+        for (const [key, value] of form.entries()) {
+            if (value === "1") {
+                c++
+            }
+        }
+        if (c === 0) {
+            alert("Prosze wybrać wykorzystane przedmioty")
+        } else {
+            $.post("127.0.0.1", { suggest: "txt" }, function (data, result) {
+                console.log(`${data}  -  ${result}`)
+            });
+        }
+
     })
 </script>
 
