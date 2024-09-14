@@ -176,10 +176,11 @@
             alert("Prosze wybrać wykorzystane przedmioty")
         } else {
             $.ajax({
-                url: 'http://192.168.0.1',
+                url: 'http://192.168.0.1/index',
                 data: form,
                 processData: false,
-                contentType: false,
+                contentType: "application/json",
+                dataType: "json",
                 type: 'POST',
                 success: function (data) {
                     alert("Wiadomość została wysłana")

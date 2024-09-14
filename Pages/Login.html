@@ -55,7 +55,8 @@
                 url: 'http://192.168.0.1/login',
                 data: { login, password },
                 processData: false,
-                contentType: false,
+                contentType: "application/json",
+                dataType: "json",
                 type: 'POST',
                 success: function (data) {
                     alert("Użytkownik zalogowany")
