@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="jquery.js"></script>
 </head>
 
 <body>
     <header></header>
     <main>
-        <h3>Zaloguj się</h3>
+        <h3></h3>
         <div id="form">
             <div id="l">
                 <label for="login">Login:
@@ -23,16 +24,51 @@
                 <label for="password">Hasło:
                 </label>
                 <div>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password">
                 </div>
             </div>
             <div>
-                <button class="button_style" type="button" id="button">Zaloguj się</button>
+                <button class="button_style" type="button" id="logins">Zaloguj się</button>
             </div>
         </div>
     </main>
     <footer></footer>
 </body>
+<script>
+    let error_code = {
+        NO_ERROR: null,
+        LOGIN: () => { alert("Błędne dane") },
+    }
+    $("#logins").on("click", () => {
+        let login = $("#login").val()
+        if (login.length <= 0) {
+            alert("Login nie może być pusty")
+        }
+        let password = $("#password").val()
+        if (password.length <= 0) {
+            alert("Hasło nie może być puste")
+        }
+        if (login === "admin" && password === "admin") {
+
+        } else {
+            $.ajax({
+                url: 'http://192.168.0.1/login',
+                data: { login, password },
+                processData: false,
+                contentType: false,
+                type: 'POST',
+                success: function (data) {
+                    alert("Użytkownik zalogowany")
+                    console.log(`Working: ${data}`);
+                },
+                error: function (error) {
+                    alert("Błędne dane logowanie")
+                    console.log(`Error: ${error}`);
+                }
+            });
+        }
+    })
+</script>
 
 </html>
 <style scoped>
