@@ -175,8 +175,20 @@
         if (c === 0) {
             alert("Prosze wybrać wykorzystane przedmioty")
         } else {
-            $.post("127.0.0.1", { suggest: "txt" }, function (data, result) {
-                console.log(`${data}  -  ${result}`)
+            $.ajax({
+                url: 'http://127.0.0.1',
+                data: form,
+                processData: false,
+                contentType: false,
+                type: 'POST',
+                success: function (data) {
+                    alert("Wiadomość została wysłana")
+                    console.log(`Working: ${data}`);
+                },
+                error: function (error) {
+                    alert("Wiadomość nie została wysłana")
+                    console.log(`Error: ${error}`);
+                }
             });
         }
 
