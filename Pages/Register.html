@@ -125,12 +125,10 @@
                 dataType: "json",
                 type: 'POST',
                 success: function (data) {
-                    alert("Użytkownik został zarejestrowany")
                     console.log(`Working: ${data}`);
                     $("#register").prop("disabled", false);
                 },
                 error: function (error) {
-                    alert("Nie udało się zarejestrować użytkownika")
                     console.log(`Error: ${error}`);
                     $("#register").prop("disabled", false);
                 }

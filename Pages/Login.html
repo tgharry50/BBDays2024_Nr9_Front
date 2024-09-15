@@ -42,11 +42,10 @@
     $("#logins").on("click", () => {
         let login = $("#login").val()
         if (login.length <= 0) {
-            alert("Login nie może być pusty")
+            console.log("puste")
         }
         let password = $("#password").val()
         if (password.length <= 0) {
-            alert("Hasło nie może być puste")
         }
         if (login === "admin" && password === "admin") {
 
@@ -65,11 +64,9 @@
                 dataType: "json",
                 type: 'POST',
                 success: function (data) {
-                    alert("Użytkownik zalogowany")
                     console.log(`Working: ${data}`);
                 },
                 error: function (error) {
-                    alert("Błędne dane logowanie")
                     console.log(`Error: ${error}`);
                 }
             });
