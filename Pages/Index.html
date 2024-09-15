@@ -101,6 +101,7 @@
     $("#warning").hide()
     $("#button").on("click", () => {
         let form = new FormData();
+        // form created
         form.append("prefix", "index")
         let bandage = $("#be").prop("checked")
         if (bandage) {
@@ -108,7 +109,6 @@
         } else {
             form.append("be", 0)
         }
-        //
         let elastic = $("#ec").prop("checked")
         if (elastic) {
             form.append("ec", 1)
@@ -187,15 +187,14 @@
         }
         let n = JSON.stringify(Object.fromEntries(form))
         console.log(n)
-        const sizeInBytes = new Blob([n]).size
         if (c === 0) {
             alert("Prosze wybrać wykorzystane przedmioty")
         } else {
             $.ajax({
                 url: 'http://192.168.0.1/index',
                 data: n,
+                contentType: "application/json",
                 dataType: "json",
-                contentType: "application/json; charset=utf-8",
                 type: 'POST',
                 success: function (data) {
                     alert("Wiadomość została wysłana")
@@ -203,11 +202,10 @@
                 },
                 error: function (error) {
                     alert(`Wiadomość nie została wysłana`)
-                    console.log(`Error: ${error}`);
+                    console.log(`Error: ${error} - ${n}`);
                 }
             });
         }
-        console.log(1)
     })
     let bandage = $("#bandage").prop("checked")
     $("#uwaga").on("click", () => {
