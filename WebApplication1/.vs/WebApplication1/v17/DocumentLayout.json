@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\controllers\\medkit\\medkitcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:controllers\\medkit\\medkitcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\controllers\\registercontroller\\registercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:controllers\\registercontroller\\registercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\controllers\\indexcontroller\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:controllers\\indexcontroller\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\controllers\\logincontroller\\logincontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:controllers\\logincontroller\\logincontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\WebApplication1\\Migrations\\20240915112100_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240915112100_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\database\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:database\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|c:\\users\\admin\\source\\repos\\webapplication1\\webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{382140AA-02AF-4872-AECB-BC352919A4D5}|WebApplication1.csproj|solutionrelative:webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\IndexController\\IndexController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IndexController\\IndexController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\IndexController\\IndexController.cs",
+              "RelativeToolTip": "Controllers\\IndexController\\IndexController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:06:30.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterControler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\RegisterController\\RegisterControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegisterController\\RegisterControler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\RegisterController\\RegisterControler.cs",
+              "RelativeToolTip": "Controllers\\RegisterController\\RegisterControler.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAADsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T07:12:10.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginControler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\LoginController\\LoginControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController\\LoginControler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\LoginController\\LoginControler.cs",
+              "RelativeToolTip": "Controllers\\LoginController\\LoginControler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T07:11:10.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240915112100_init1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Migrations\\20240915112100_init1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240915112100_init1.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Migrations\\20240915112100_init1.cs",
+              "RelativeToolTip": "Migrations\\20240915112100_init1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:21:00.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedkitControler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\Medkit\\MedkitControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\Medkit\\MedkitControler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Controllers\\Medkit\\MedkitControler.cs",
+              "RelativeToolTip": "Controllers\\Medkit\\MedkitControler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T10:48:44.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T03:46:05.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WebApplication1.http",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\WebApplication1.http",
+              "RelativeDocumentMoniker": "WebApplication1.http",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\WebApplication1.http",
+              "RelativeToolTip": "WebApplication1.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-15T04:07:08.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Database\\DataContext.cs",
+              "RelativeDocumentMoniker": "Database\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\WebApplication1\\Database\\DataContext.cs",
+              "RelativeToolTip": "Database\\DataContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T04:03:37.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
