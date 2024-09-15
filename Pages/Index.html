@@ -98,122 +98,124 @@
     </footer>
 </body>
 <script>
-    $("#warning").hide()
-    $("#button").on("click", () => {
-        let form = new FormData();
-        // form created
-        form.append("prefix", "index")
-        let bandage = $("#be").prop("checked")
-        if (bandage) {
-            form.append("be", 1)
-        } else {
-            form.append("be", 0)
-        }
-        let elastic = $("#ec").prop("checked")
-        if (elastic) {
-            form.append("ec", 1)
-        } else {
-            form.append("e", 0)
-        }
-        let splint = $("#st").prop("checked")
-        if (splint) {
-            form.append("st", 1)
-        } else {
-            form.append("st", 0)
-        }
-        let plaster_mark = $("#plaster_mark").prop("checked")
-        if (plaster_mark) {
-            form.append("pk", 1)
-        } else {
-            form.append("pk", 0)
-        }
-        let plaster_mark_2 = $("#pk2").prop("checked")
-        if (plaster_mark_2) {
-            form.append("pk2", 1)
-        } else {
-            form.append("pk2", 0)
-        }
-        let spirit = $("#spt").prop("checked")
-        if (spirit) {
-            form.append("spt", 1)
-        } else {
-            form.append("spt", 0)
-        }
-        let foil_nrc = $("#fnrc").prop("checked")
-        if (foil_nrc) {
-            form.append("fnrc", 1)
-        } else {
-            form.append("fnrc", 0)
-        }
-        let mask = $("#mask").prop("checked")
-        if (mask) {
-            form.append("mask", 1)
-        } else {
-            form.append("mask", 0)
-        }
-        let bloodsucker = $("#bsr").prop("checked")
-        if (bloodsucker) {
-            form.append("bsr", 1)
-        } else {
-            form.append("bsr", 0)
-        }
-        let latex = $("#lx").prop("checked")
-        if (latex) {
-            form.append("lx", 1)
-        } else {
-            form.append("lx", 0)
-        }
-        let dust_wound = $("#dd").prop("checked")
-        if (dust_wound) {
-            form.append("dd", 1)
-        } else {
-            form.append("dd", 0)
-        }
-        let medpack = $("#mk").prop("checked")
-        if (medpack) {
-            form.append("mk", 1)
-        } else {
-            form.append("mk", 0)
-        }
-        let text_content = $("#warning").val()
-        if (text_content.length > 0) {
-            form.append("warning", text_content)
-        }
-        let c = 0;
-        for (const [key, value] of form.entries()) {
-            if (value === "1") {
-                c++
+    $(document).ready(() => {
+        $("#warning").hide()
+        $("#button").on("click", () => {
+            let form = new FormData();
+            // form created
+            form.append("prefix", "index")
+            let bandage = $("#be").prop("checked")
+            if (bandage) {
+                form.append("be", 1)
+            } else {
+                form.append("be", 0)
             }
-        }
-        let n = JSON.stringify(Object.fromEntries(form))
-        console.log(n)
-        if (c === 0) {
-            console.log("0")
-        } else {
-            $.ajax({
-                url: 'http://192.168.0.1/index',
-                data: n,
-                contentType: "application/json",
-                dataType: "json",
-                type: 'POST',
-                success: function (data) {
-                    console.log(`Working: ${data}`);
-                },
-                error: function (error) {
-                    console.log(`Error: ${error} - ${n}`);
+            let elastic = $("#ec").prop("checked")
+            if (elastic) {
+                form.append("ec", 1)
+            } else {
+                form.append("e", 0)
+            }
+            let splint = $("#st").prop("checked")
+            if (splint) {
+                form.append("st", 1)
+            } else {
+                form.append("st", 0)
+            }
+            let plaster_mark = $("#plaster_mark").prop("checked")
+            if (plaster_mark) {
+                form.append("pk", 1)
+            } else {
+                form.append("pk", 0)
+            }
+            let plaster_mark_2 = $("#pk2").prop("checked")
+            if (plaster_mark_2) {
+                form.append("pk2", 1)
+            } else {
+                form.append("pk2", 0)
+            }
+            let spirit = $("#spt").prop("checked")
+            if (spirit) {
+                form.append("spt", 1)
+            } else {
+                form.append("spt", 0)
+            }
+            let foil_nrc = $("#fnrc").prop("checked")
+            if (foil_nrc) {
+                form.append("fnrc", 1)
+            } else {
+                form.append("fnrc", 0)
+            }
+            let mask = $("#mask").prop("checked")
+            if (mask) {
+                form.append("mask", 1)
+            } else {
+                form.append("mask", 0)
+            }
+            let bloodsucker = $("#bsr").prop("checked")
+            if (bloodsucker) {
+                form.append("bsr", 1)
+            } else {
+                form.append("bsr", 0)
+            }
+            let latex = $("#lx").prop("checked")
+            if (latex) {
+                form.append("lx", 1)
+            } else {
+                form.append("lx", 0)
+            }
+            let dust_wound = $("#dd").prop("checked")
+            if (dust_wound) {
+                form.append("dd", 1)
+            } else {
+                form.append("dd", 0)
+            }
+            let medpack = $("#mk").prop("checked")
+            if (medpack) {
+                form.append("mk", 1)
+            } else {
+                form.append("mk", 0)
+            }
+            let text_content = $("#warning").val()
+            if (text_content.length > 0) {
+                form.append("warning", text_content)
+            }
+            let c = 0;
+            for (const [key, value] of form.entries()) {
+                if (value === "1") {
+                    c++
                 }
-            });
-        }
-    })
-    let bandage = $("#bandage").prop("checked")
-    $("#uwaga").on("click", () => {
-        $("#warning").toggle();
-    })
-    $("#login").on("click", () => {
-        window.location.href = "/login.html"
-    })
-    $("#register").on("click", () => {
-        window.location.href = "/register.html"
+            }
+            let n = JSON.stringify(Object.fromEntries(form))
+            console.log(n)
+            if (c === 0) {
+                console.log("0")
+            } else {
+                $.ajax({
+                    url: 'http://192.168.0.1/index',
+                    data: n,
+                    contentType: "application/json",
+                    dataType: "json",
+                    type: 'POST',
+                    success: function (data) {
+                        console.log(`Working: ${data}`);
+                    },
+                    error: function (error) {
+                        console.log(`Error: ${error} - ${n}`);
+                    }
+                });
+            }
+        })
+        let bandage = $("#bandage").prop("checked")
+        $("#uwaga").on("click", () => {
+            $("#warning").toggle();
+        })
+        $("#login").on("click", () => {
+            window.location.href = "/login.html"
+        })
+        $("#register").on("click", () => {
+            window.location.href = "/register.html"
+        })
     })
 </script>
 
