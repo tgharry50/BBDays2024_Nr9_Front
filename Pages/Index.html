@@ -184,6 +184,7 @@
                 c++
             }
         }
+        let n = JSON.stringify(Object.fromEntries(form))
         if (c === 0) {
             alert("Prosze wybrać wykorzystane przedmioty")
         } else {
@@ -198,7 +199,7 @@
                     console.log(`Working: ${data}`);
                 },
                 error: function (error) {
-                    alert(`Wiadomość nie została wysłana: \n${error}`)
+                    alert(`Wiadomość nie została wysłana: \n${error}\n${form}`)
                     console.log(`Error: ${error}`);
                 }
             });
