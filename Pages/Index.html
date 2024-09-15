@@ -190,8 +190,8 @@
             $.ajax({
                 url: 'http://192.168.0.1/index',
                 data: JSON.stringify(form),
-                processData: false,
-                contentType: 'application/json',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
                 type: 'POST',
                 success: function (data) {
                     alert("Wiadomość została wysłana")
