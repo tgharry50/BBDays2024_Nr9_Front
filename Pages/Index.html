@@ -186,8 +186,8 @@
             }
         }
         let n = JSON.stringify(Object.fromEntries(form))
+        console.log(n)
         const sizeInBytes = new Blob([n]).size
-        console.log(sizeInBytes)
         if (c === 0) {
             alert("Prosze wybrać wykorzystane przedmioty")
         } else {
@@ -202,7 +202,7 @@
                     console.log(`Working: ${data}`);
                 },
                 error: function (error) {
-                    alert(`Wiadomość nie została wysłana: \n${error}\n${form}`)
+                    alert(`Wiadomość nie została wysłana`)
                     console.log(`Error: ${error}`);
                 }
             });
