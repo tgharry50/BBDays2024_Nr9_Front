@@ -177,9 +177,9 @@
         } else {
             $.ajax({
                 url: 'http://192.168.0.1/index',
-                data: multipart / form - data,
+                data: form,
                 processData: false,
-                contentType: "application/json",
+                contentType: "multipart/form-data",
                 dataType: "json",
                 type: 'POST',
                 success: function (data) {
