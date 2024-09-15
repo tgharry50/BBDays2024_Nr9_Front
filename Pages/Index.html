@@ -101,6 +101,7 @@
     $("#warning").hide()
     $("#button").on("click", () => {
         let form = new FormData();
+        form.append("prefix", "index")
         let bandage = $("#be").prop("checked")
         if (bandage) {
             form.append("be", 1)

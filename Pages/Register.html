@@ -109,15 +109,18 @@
             a_manual("Hasło", 6)
             c = true;
         }
+        let items = {
+            prefix: "register",
+            first_name: fn,
+            last_name: ln,
+            login: l,
+            password: p
+        }
+        let n = JSON.stringify(items)
         $.ajax({
             url: 'http://192.168.0.1/register',
-            data: {
-                first_name: fn,
-                last_name: ln,
-                login: l,
-                password: p
-            },
-            contentType: "application/json",
+            data: n,
+            contentType: "application/json; charset=utf-8",
             dataType: "json",
             type: 'POST',
             success: function (data) {
