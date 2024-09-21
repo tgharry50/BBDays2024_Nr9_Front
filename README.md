@@ -42,7 +42,9 @@ Web app embedded to First Aid kit:
 
 ![image](https://github.com/user-attachments/assets/63437675-08d3-4f2e-94c4-6af2d1636a3a)
 
-Desktop server app:
+Desktop server app for IoT-Based Distributed First Aid Kit System admins:
+
+![admin](https://github.com/user-attachments/assets/2179b578-6e85-43eb-a0dc-e1c89f3e69e5)
 
 ![image](https://github.com/user-attachments/assets/d7156940-22b2-46c8-857e-b48dd74c816a)
 
