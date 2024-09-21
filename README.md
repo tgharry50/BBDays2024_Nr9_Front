@@ -17,7 +17,8 @@ https://github.com/majorBien/BBDays-Hackathon_Embedded_First_Aid_Kit
 
 This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. 
 
-![image](https://github.com/user-attachments/assets/ac3692b4-3e91-4a5c-bde4-8f235c6ec002)
+![kit](https://github.com/user-attachments/assets/e274536f-2cc1-48ba-b4a0-df3323b659f1)
+
 
 The server-side application is split into two parts. The front-end is developed using Vue.js with Vuetify, providing a responsive and modern UI. The back-end is built in C# using the Entity Framework, which communicates with a Microsoft SQL Server database. This architecture ensures that all data, including inventory, user registration, and SOS messages, is efficiently processed and stored in a secure and scalable manner. Communication between the server and devices is handled via HTTP and JSON files, with the server-side application written in C# and the client-side built using JavaScript and Vue.js. The system tracks the contents and locations of all first aid kits, ensuring resources are always accessible.
 
