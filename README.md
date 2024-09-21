@@ -1,11 +1,12 @@
 IoT-Based Distributed First Aid Kit System Using LoRaWAN and ESP32
 
+Attention!!!! the entire project was implemented by the Hackathon "HackBB 2024" in Bielsko-Biała in time shorter than 24h
 
 Frontend and Backend software - Mikołaj Harężlak
 
 Embedded software - Wiktor Bień
 
-Original repos of embedded prject posted below (if you want to see the history of commits):
+Original repos of embedded project posted below (if you want to see the history of commits):
 
 https://github.com/majorBien/BBDays-Hackathon_Embedded_Main_Hub
 
@@ -15,6 +16,8 @@ https://github.com/majorBien/BBDays-Hackathon_Embedded_First_Aid_Kit
 
 
 This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. 
+
+![kit](https://github.com/user-attachments/assets/49fb38bb-b757-4e91-bd06-383231d0f446)
 
 ![image](https://github.com/user-attachments/assets/ac3692b4-3e91-4a5c-bde4-8f235c6ec002)
 
