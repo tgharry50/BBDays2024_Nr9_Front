@@ -5,7 +5,10 @@ Frontend and Backend software - Mikołaj Harężlak
 
 ![image](https://github.com/user-attachments/assets/24170a18-848a-45cb-b573-7e4a839630e6)
 
+
 This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. 
+
+![image](https://github.com/user-attachments/assets/ac3692b4-3e91-4a5c-bde4-8f235c6ec002)
 
 The embedded software for the first aid kits has been developed in C using the ESP-IDF framework. The application is designed to run in a multi-threaded environment, with the HTTP communication and LoRaWAN protocol handled on separate cores of the ESP32, ensuring efficient parallel processing. The web interface is built using jQuery, providing a user-friendly experience for interacting with the kits.
 
