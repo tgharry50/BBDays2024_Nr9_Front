@@ -13,7 +13,7 @@ The server-side application is split into two parts. The front-end is developed 
 
 The electromagnetic lock is simulated by a red LED connected to the ESP32, which activates upon establishing a Wi-Fi connection, as each kit operates as a Wi-Fi access point (AP):
 
-![e56b8bb5-dcd3-4a26-8d52-ce3d0c4eaec7](https://github.com/user-attachments/assets/cbb76011-5019-4092-b2a2-2a4cd9e801a3)
+![e56b8bb5-dcd3-4a26-8d52-ce3d0c4eaec7](https://github.com/user-attachments/assets/8cf30424-48ae-4d99-9267-30b7871d2b25)
 
 
 Users can connect to the kit’s Wi-Fi and access a built-in web interface developed in jQuery. Through this interface, they can request emergency assistance by sending a text message over LoRaWAN, even in challenging conditions. They can also log items taken from the kit, such as bandages or hydrogen peroxide, and this information is transmitted to the central hub (concentrator) via LoRaWAN for real-time inventory tracking.
