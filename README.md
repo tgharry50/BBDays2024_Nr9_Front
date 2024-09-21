@@ -17,9 +17,6 @@ https://github.com/majorBien/BBDays-Hackathon_Embedded_First_Aid_Kit
 
 This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. 
 
-![image](https://github.com/user-attachments/assets/f37a4db0-fc04-4c97-9a74-09e18ca31550)
-
-
 The server-side application is split into two parts. The front-end is developed using Vue.js with Vuetify, providing a responsive and modern UI. The back-end is built in C# using the Entity Framework, which communicates with a Microsoft SQL Server database. This architecture ensures that all data, including inventory, user registration, and SOS messages, is efficiently processed and stored in a secure and scalable manner. Communication between the server and devices is handled via HTTP and JSON files, with the server-side application written in C# and the client-side built using JavaScript and Vue.js. The system tracks the contents and locations of all first aid kits, ensuring resources are always accessible.
 
 ![kit](https://github.com/user-attachments/assets/49fb38bb-b757-4e91-bd06-383231d0f446)
@@ -32,6 +29,8 @@ The electromagnetic lock of the first aid kit is simulated by a red LED connecte
 
 
 Users can connect to the kit’s Wi-Fi and access a built-in web interface developed in jQuery. Through this interface, they can request emergency assistance by sending a text message over LoRaWAN, even in challenging conditions. They can also log items taken from the kit, such as bandages or hydrogen peroxide, and this information is transmitted to the central hub (concentrator) via LoRaWAN for real-time inventory tracking.
+
+![image](https://github.com/user-attachments/assets/f37a4db0-fc04-4c97-9a74-09e18ca31550)
 
 The system supports user registration and login via LoRaWAN, facilitating the management of access and user activity. Both the first aid kits and the concentrator are built using ESP32 microcontrollers and SX1262 LoRa chips, ensuring efficient data handling and transmission.
 
