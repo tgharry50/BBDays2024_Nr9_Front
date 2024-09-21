@@ -5,13 +5,13 @@ Frontend and Backend software - Mikołaj Harężlak
 
 ![image](https://github.com/user-attachments/assets/24170a18-848a-45cb-b573-7e4a839630e6)
 
-This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. The electromagnetic lock is simulated by a red LED connected to the ESP32, which activates upon establishing a Wi-Fi connection, as each kit operates as a Wi-Fi access point (AP).
-
-Technologies
+This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. 
 
 The embedded software for the first aid kits has been developed in C using the ESP-IDF framework. The application is designed to run in a multi-threaded environment, with the HTTP communication and LoRaWAN protocol handled on separate cores of the ESP32, ensuring efficient parallel processing. The web interface is built using jQuery, providing a user-friendly experience for interacting with the kits.
 
 The server-side application is split into two parts. The front-end is developed using Vue.js with Vuetify, providing a responsive and modern UI. The back-end is built in C# using the Entity Framework, which communicates with a Microsoft SQL Server database. This architecture ensures that all data, including inventory, user registration, and SOS messages, is efficiently processed and stored in a secure and scalable manner.
+
+The electromagnetic lock is simulated by a red LED connected to the ESP32, which activates upon establishing a Wi-Fi connection, as each kit operates as a Wi-Fi access point (AP):
 
 ![e56b8bb5-dcd3-4a26-8d52-ce3d0c4eaec7](https://github.com/user-attachments/assets/cbb76011-5019-4092-b2a2-2a4cd9e801a3)
 
@@ -19,8 +19,6 @@ The server-side application is split into two parts. The front-end is developed 
 Users can connect to the kit’s Wi-Fi and access a built-in web interface developed in jQuery. Through this interface, they can request emergency assistance by sending a text message over LoRaWAN, even in challenging conditions. They can also log items taken from the kit, such as bandages or hydrogen peroxide, and this information is transmitted to the central hub (concentrator) via LoRaWAN for real-time inventory tracking.
 
 The system supports user registration and login via LoRaWAN, facilitating the management of access and user activity. Both the first aid kits and the concentrator are built using ESP32 microcontrollers and SX1262 LoRa chips, ensuring efficient data handling and transmission.
-
-A back-end application, written in C#, aggregates data from all first aid kits and stores it in a SQL database, maintaining a detailed record of supplies and user interactions. Separate firmware was developed for the first aid kits and the concentrator using the ESP-IDF framework in C.
 
 Communication between the server and devices is handled via HTTP and JSON files, with the server-side application written in C# and the client-side built using JavaScript and Vue.js. The system tracks the contents and locations of all first aid kits, ensuring resources are always accessible.
 
