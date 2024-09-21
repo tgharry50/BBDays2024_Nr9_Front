@@ -5,6 +5,7 @@ Frontend and Backend software - Mikołaj Harężlak
 Embedded software - Wiktor Bień
 Original repos of embedded prject posted below:
 https://github.com/majorBien/BBDays-Hackathon_Embedded_Main_Hub
+
 https://github.com/majorBien/BBDays-Hackathon_Embedded_First_Aid_Kit
 
 ![image](https://github.com/user-attachments/assets/24170a18-848a-45cb-b573-7e4a839630e6)
