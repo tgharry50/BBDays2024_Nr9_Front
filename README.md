@@ -3,7 +3,7 @@ IoT-Based Distributed First Aid Kit System Using LoRaWAN and ESP32
 
 Frontend and Backend software - Mikołaj Harężlak
 Embedded software - Wiktor Bień
-Original repos of embedded prject posted below (if you want to see the history of commits):
+Original repos of embedded prject posted below:
 https://github.com/majorBien/BBDays-Hackathon_Embedded_Main_Hub
 https://github.com/majorBien/BBDays-Hackathon_Embedded_First_Aid_Kit
 
