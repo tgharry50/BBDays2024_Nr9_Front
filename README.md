@@ -17,13 +17,13 @@ https://github.com/majorBien/BBDays-Hackathon_Embedded_First_Aid_Kit
 
 This innovative IoT system manages a network of distributed first aid kits in outdoor and remote environments, utilizing LoRaWAN technology for long-range communication. Each first aid kit functions as an HTTP-to-LoRaWAN gateway, enabling seamless data transfer between the web interface and the LoRaWAN network. 
 
-![kit](https://github.com/user-attachments/assets/49fb38bb-b757-4e91-bd06-383231d0f446)
-
 ![image](https://github.com/user-attachments/assets/ac3692b4-3e91-4a5c-bde4-8f235c6ec002)
 
-The embedded software for the first aid kits has been developed in C using the ESP-IDF framework. The application is designed to run in a multi-threaded environment, with the HTTP communication and LoRaWAN protocol handled on separate cores of the ESP32, ensuring efficient parallel processing. The web interface is built using jQuery, providing a user-friendly experience for interacting with the kits.
-
 The server-side application is split into two parts. The front-end is developed using Vue.js with Vuetify, providing a responsive and modern UI. The back-end is built in C# using the Entity Framework, which communicates with a Microsoft SQL Server database. This architecture ensures that all data, including inventory, user registration, and SOS messages, is efficiently processed and stored in a secure and scalable manner. Communication between the server and devices is handled via HTTP and JSON files, with the server-side application written in C# and the client-side built using JavaScript and Vue.js. The system tracks the contents and locations of all first aid kits, ensuring resources are always accessible.
+
+![kit](https://github.com/user-attachments/assets/49fb38bb-b757-4e91-bd06-383231d0f446)
+
+The embedded software for the first aid kits has been developed in C using the ESP-IDF framework. The application is designed to run in a multi-threaded environment, with the HTTP communication and LoRaWAN protocol handled on separate cores of the ESP32, ensuring efficient parallel processing. The web interface is built using jQuery, providing a user-friendly experience for interacting with the kits.
 
 The electromagnetic lock of the first aid kit is simulated by a red LED connected to the ESP32, which activates upon establishing a Wi-Fi connection, as each kit operates as a Wi-Fi access point (AP):
 
